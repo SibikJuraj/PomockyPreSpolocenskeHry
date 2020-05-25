@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/karta"
+        android:layout_width="120dp"
+        android:layout_height="161dp"
+        android:onClick="spustiKartu"
+        android:src="@drawable/card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nastavPocetSekund"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <TextView
+        android:id="@+id/kartaTextView"
+        style="@style/TextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/karta"
+        app:layout_constraintEnd_toEndOf="@+id/karta"
+        app:layout_constraintStart_toStartOf="@+id/karta"
+        app:layout_constraintTop_toBottomOf="@+id/karta" />
+
+    <ImageView
+        android:id="@+id/flasa"
+        android:layout_width="137dp"
+        android:layout_height="177dp"
+        android:onClick="spustiFlasu"
+        android:scaleType="centerInside"
+        android:src="@drawable/bottle_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/hod_kockou"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/flasaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flasa"
+        style="@style/TextViewStyle"
+        app:layout_constraintEnd_toEndOf="@+id/flasa"
+        app:layout_constraintStart_toStartOf="@+id/flasa"
+        app:layout_constraintTop_toBottomOf="@+id/flasa" />
+
+    <ImageView
+        android:id="@+id/hod_kockou"
+        android:layout_width="152dp"
+        android:layout_height="154dp"
+        android:adjustViewBounds="false"
+        android:onClick="spustiHodKockou"
+        android:scaleType="centerInside"
+        android:src="@drawable/dices"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hodKockouTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewStyle"
+        android:text="@string/hodKockou"
+        app:layout_constraintEnd_toEndOf="@+id/hod_kockou"
+        app:layout_constraintStart_toStartOf="@+id/hod_kockou"
+        app:layout_constraintTop_toBottomOf="@+id/hod_kockou" />
+
+    <ImageView
+        android:id="@+id/casovac"
+        android:layout_width="178dp"
+        android:layout_height="126dp"
+        android:onClick="spustiCasovac"
+        android:src="@drawable/pripitok"
+        app:layout_constraintBottom_toTopOf="@+id/karta"
+        app:layout_constraintEnd_toEndOf="@+id/nastavPocetSekund"
+        app:layout_constraintStart_toStartOf="@+id/nastavPocetSekund"
+        app:layout_constraintTop_toBottomOf="@+id/nastavPocetSekund"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/casovacTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewStyle"
+        android:text="@string/casovacNaPripitok"
+        app:layout_constraintEnd_toEndOf="@+id/casovac"
+        app:layout_constraintStart_toStartOf="@+id/casovac"
+        app:layout_constraintTop_toBottomOf="@+id/casovac" />
+
+    <EditText
+        android:id="@+id/nastavPocetSekund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/TextViewStyle"
+        android:hint="@string/nastavPocetSekund"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

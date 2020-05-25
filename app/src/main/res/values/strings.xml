@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Pomôcky Pre Spoločenské Hry</string>
+    <string name="nastavenia">Nastavenia</string>
+    <string name="hodKockou">Hod Kockou</string>
+    <string name="karta">Chýbajúca Karta</string>
+    <string name="flasa">Fľaša</string>
+    <string name="list_flias">List Fliaš</string>
+
+
+    <string name="list_kariet">List Kariet</string>
+    <string name="casovacNaPripitok">Časovač na prípitok</string>
+    <string name="casovac">Časovač</string>
+    <string name="spustiCasovac">Spusti Časovač</string>
+    <string name="zacatNovyHod">Začať nový hod</string>
+    <string name="infokarta">infoKarta</string>
+    <string name="infoflasa">infoFľaša</string>
+    <string name="infokocka">infoKocka</string>
+    <string name="dalsie_flase">Ďaľšie fľaše</string>
+    <string name="nastavPocetSekund">Nastav počet sekúnd</string>
+    <string name="casVyprsal">Čas vypršal</string>
+
+</resources>

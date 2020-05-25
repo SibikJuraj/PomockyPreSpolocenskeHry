@@ -1,0 +1,2 @@
+rootProject.name='Pomocky Pre Spolocenske Hry'
+include ':app'
